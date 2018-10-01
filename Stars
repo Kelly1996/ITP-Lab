@@ -1,0 +1,64 @@
+#Creating triangle 1
+
+#Ability to insert any number
+num = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for i in range(0, num):
+    for j in range(0, num-i-1):#Calculations are  made 
+        print(end=" ")
+    for j in range(0, i+1):#Calculations are made in order to get an output
+        print("*", end=" ")
+    print()
+    
+#Creating triangle 2
+
+#Ability to insert any number
+num = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for i in range(1, num + 1):#Calculations are  made 
+    for j in range(1, i + 1):#Calculations are made in order to get an output
+        print("*", end=" ")
+    print()
+    
+#Creating triangle 3
+
+#Ability to insert any number
+num = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for i in range(num, 0, -1):
+    for j in range(0, i):
+        print("*", end=" ")
+    print()
+    
+#Creating triangle 4
+
+#Ability to insert any number
+num = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for i in range(num):
+        print(''*(num-i-1)+'*'*(i+1))
+for j in range(num-1, 0, -1):
+        print(''*(num-j)+'*'*(j))
+        
+#Creating triangle 5
+
+#Ability to insert any number
+n = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for row in range(0, n):
+    for col in range(0, n):
+        if col == (n-1) or row == col:#If statement is inforced for decision
+            print("*", end=" ")
+        else:
+            print(end=" ")
+    print()
+    
+#Creating tiangle 6
+
+#Ability to insert any number
+num = int(input("enter the number of rows:"))
+#Loop is made for a certain input range
+for i in range(1, num - 1):
+    for j in range(1, i - 1):
+        print("*", end=" ")
+    print()
