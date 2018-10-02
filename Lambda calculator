@@ -1,0 +1,45 @@
+#Wejamouje Calvin Mumbuu
+
+#operations are declared using the 'x' and 'y' variable
+operations = {
+    "+": lambda x, y: x + y,
+    "-": lambda x, y: x - y,
+    "/": lambda x, y: x / y,
+    "*": lambda x, y: x * y}
+
+#A functions is created for calculation and loops
+def calculate(expr):
+
+    numxchars = ""
+    operation = None
+    numyChars = ""
+
+    for char in expr:#For loop is created for characters in the expressions
+        
+        if char.isdigit():
+            
+            if operation is None: 
+                
+                numxchars += char #numxchars is added to character to get character
+                
+            else:
+                
+                numyChars += char #numyChars is added to character to get character
+                
+        elif char in operations:
+            
+            operation = char #operation is set to be equivalent to character
+            
+        elif char.isspace: #If character is null then pass and raise exception invalid character plus character and return operation
+            
+            pass
+        
+        else:
+            
+            raise Exception("invalid character: " + char)
+        
+    return operations[operation](int(numxchars), int(numyChars))
+
+
+print calculate()
+
